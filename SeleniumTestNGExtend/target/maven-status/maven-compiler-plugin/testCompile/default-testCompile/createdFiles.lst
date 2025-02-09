@@ -1,0 +1,5 @@
+Pages\ProductsPage.class
+Tests\ProductsTest.class
+Pages\HomePage.class
+Tests\HomePageTest.class
+Tests\BaseTest.class
