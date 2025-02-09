@@ -1,120 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-09T19:07:03 ICT" name="Surefire suite" finished-at="2025-02-09T19:07:19 ICT" duration-ms="15443">
+  <suite started-at="2025-02-09T19:12:26 ICT" name="Surefire suite" finished-at="2025-02-09T19:12:41 ICT" duration-ms="15645">
     <groups>
     </groups>
-    <test started-at="2025-02-09T19:07:03 ICT" name="Surefire test" finished-at="2025-02-09T19:07:19 ICT" duration-ms="15443">
+    <test started-at="2025-02-09T19:12:26 ICT" name="Surefire test" finished-at="2025-02-09T19:12:41 ICT" duration-ms="15645">
       <class name="Tests.ProductsTest">
-        <test-method signature="validateNavigationToOnlineProducts()[pri:1, instance:Tests.ProductsTest@5149d738]" started-at="2025-02-09T19:07:11 ICT" name="validateNavigationToOnlineProducts" finished-at="2025-02-09T19:07:13 ICT" duration-ms="1122" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="menu"]/a[3]/li"}
-  (Session info: chrome=133.0.6943.60)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.26'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f18702b85314c2418f7ceac97db41901, findElement {value=//*[@id="menu"]/a[3]/li, using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.60, chrome: {chromedriverVersion: 133.0.6943.53 (9a80935019b0..., userDataDir: C:\WINDOWS\TEMP\scoped_dir1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50236}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50236/devtoo..., se:cdpVersion: 133.0.6943.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f18702b85314c2418f7ceac97db41901]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="menu"]/a[3]/li"}
-  (Session info: chrome=133.0.6943.60)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.26'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f18702b85314c2418f7ceac97db41901, findElement {value=//*[@id="menu"]/a[3]/li, using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.60, chrome: {chromedriverVersion: 133.0.6943.53 (9a80935019b0..., userDataDir: C:\WINDOWS\TEMP\scoped_dir1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50236}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50236/devtoo..., se:cdpVersion: 133.0.6943.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f18702b85314c2418f7ceac97db41901
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at Pages.HomePage.click_onlineProducts_link(HomePage.java:20)
-at Tests.ProductsTest.validateNavigationToOnlineProducts(ProductsTest.java:14)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="validateNavigationToOnlineProducts()[pri:1, instance:Tests.ProductsTest@5149d738]" started-at="2025-02-09T19:12:30 ICT" name="validateNavigationToOnlineProducts" finished-at="2025-02-09T19:12:34 ICT" duration-ms="4299" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateNavigationToOnlineProducts -->
-        <test-method signature="validateTitle()[pri:2, instance:Tests.ProductsTest@5149d738]" started-at="2025-02-09T19:07:13 ICT" name="validateTitle" finished-at="2025-02-09T19:07:14 ICT" duration-ms="1470" status="PASS">
+        <test-method signature="validateTitle()[pri:2, instance:Tests.ProductsTest@5149d738]" started-at="2025-02-09T19:12:34 ICT" name="validateTitle" finished-at="2025-02-09T19:12:36 ICT" duration-ms="1443" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateTitle -->
-        <test-method signature="validateFirstFormalShoes()[pri:3, instance:Tests.ProductsTest@5149d738]" started-at="2025-02-09T19:07:14 ICT" name="validateFirstFormalShoes" finished-at="2025-02-09T19:07:15 ICT" duration-ms="1166" status="PASS">
+        <test-method signature="validateFirstFormalShoes()[pri:3, instance:Tests.ProductsTest@5149d738]" started-at="2025-02-09T19:12:36 ICT" name="validateFirstFormalShoes" finished-at="2025-02-09T19:12:37 ICT" duration-ms="1170" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateFirstFormalShoes -->
-        <test-method signature="validateFirstSportsShoes()[pri:4, instance:Tests.ProductsTest@5149d738]" started-at="2025-02-09T19:07:15 ICT" name="validateFirstSportsShoes" finished-at="2025-02-09T19:07:16 ICT" duration-ms="1142" status="PASS">
+        <test-method signature="validateFirstSportsShoes()[pri:4, instance:Tests.ProductsTest@5149d738]" started-at="2025-02-09T19:12:37 ICT" name="validateFirstSportsShoes" finished-at="2025-02-09T19:12:38 ICT" duration-ms="1170" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateFirstSportsShoes -->
-        <test-method signature="validateFirstSneakers()[pri:5, instance:Tests.ProductsTest@5149d738]" started-at="2025-02-09T19:07:16 ICT" name="validateFirstSneakers" finished-at="2025-02-09T19:07:18 ICT" duration-ms="1157" status="PASS">
+        <test-method signature="validateFirstSneakers()[pri:5, instance:Tests.ProductsTest@5149d738]" started-at="2025-02-09T19:12:38 ICT" name="validateFirstSneakers" finished-at="2025-02-09T19:12:39 ICT" duration-ms="1146" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateFirstSneakers -->
       </class> <!-- Tests.ProductsTest -->
-      <class name="Tests.HomePageTest">
-        <test-method signature="validateNavigationToOnlineProducts()[pri:0, instance:Tests.HomePageTest@53045c6c]" started-at="2025-02-09T19:07:09 ICT" name="validateNavigationToOnlineProducts" finished-at="2025-02-09T19:07:11 ICT" duration-ms="2974" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateNavigationToOnlineProducts -->
-      </class> <!-- Tests.HomePageTest -->
       <class name="Tests.BaseTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.BaseTest@2af004b]" started-at="2025-02-09T19:07:03 ICT" name="setUp" finished-at="2025-02-09T19:07:08 ICT" duration-ms="5051" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.BaseTest@2af004b]" started-at="2025-02-09T19:12:26 ICT" name="setUp" finished-at="2025-02-09T19:12:30 ICT" duration-ms="4382" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.BaseTest@2af004b]" started-at="2025-02-09T19:07:18 ICT" name="tearDown" finished-at="2025-02-09T19:07:19 ICT" duration-ms="1285" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.BaseTest@2af004b]" started-at="2025-02-09T19:12:39 ICT" name="tearDown" finished-at="2025-02-09T19:12:41 ICT" duration-ms="1990" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
